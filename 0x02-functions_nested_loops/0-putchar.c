@@ -6,8 +6,8 @@
  * Return: (0)
  */
 
-int _putchar(char x[])
+char _putchar(char x[])
 {
 x[]={'_','p','u','t','c','h','a','r','\n'};
-return (write(1,%x,1));
+return (write(1,%x[],1));
 }
