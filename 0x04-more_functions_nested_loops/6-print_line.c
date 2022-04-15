@@ -1,7 +1,7 @@
 #include "imain.h"
 /**
  * print_line - draws a straight line in the terminal.
- * Return: always 0 .
+ * Return: Always 0.
  */
 void print_line(int n)
 {
