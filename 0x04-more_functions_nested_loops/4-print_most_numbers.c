@@ -1,8 +1,10 @@
 #include "main.h"
 /**
  * print_most_numbers - prints the numbers
+ *
  * Return: always 0 on success.
  */
+
 void print_most_numbers(void)
 {
 int i;
