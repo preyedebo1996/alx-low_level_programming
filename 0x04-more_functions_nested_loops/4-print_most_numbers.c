@@ -2,7 +2,7 @@
 /**
  * print_most_numbers - prints the numbers
  *
- * Return: always 0 on success.
+ * Return: Always 0.
  */
 void print_most_numbers(void)
 {
