@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_numbers - prints the numbers
+ * print_numbers - prints numbers
  * Return: always 0 on success
  */
-
 void print_numbers(void)
 {
 int i;
