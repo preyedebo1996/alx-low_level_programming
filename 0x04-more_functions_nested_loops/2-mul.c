@@ -2,7 +2,8 @@
 
 /**
  * mul - multiplies two int
- * @a print int,@b print int
+ * @a print int
+ * @b print int
  * Return: always 0 on success
  */
 
