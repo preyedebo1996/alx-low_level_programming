@@ -9,6 +9,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
+	char *g = dest;
 
 	for (i = 0; i < src[i]; i++)
 	{
@@ -18,5 +19,5 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = 0;
 	
 
-	return (dest);
+	return (g);
 }
