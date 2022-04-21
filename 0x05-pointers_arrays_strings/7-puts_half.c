@@ -25,13 +25,6 @@ void puts_half(char *str)
 	_putchar (str[j]);
 	}
 	}
-	else
-        {
-        for (j = (n + 1); str[j]; j++)
-        {
-        _putchar (str[j]);
-        }
-        }
 
 	_putchar ('\n');
 }
