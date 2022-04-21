@@ -6,10 +6,9 @@
  * @s: pointer variable with type char
  * Return: always 0.
  */
-
+int _strlen(char *s);
 void print_rev(char *s)
 {
-	int _strlen(char *s);
 	int len = _strlen(s);
 	int startidx = len - 1;
 
