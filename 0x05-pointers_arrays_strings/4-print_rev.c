@@ -10,34 +10,12 @@ int _strlen(char *s);
 
 void print_rev(char *s)
 {
-	int u = 0, v, len;
-	int endidx, startidx;
+	int len = _strlen(s);
+	int startidx = len - 1;
 
-	len = _strlen(s);
-	endidx = len -1;
-
-	for (u = len - 1; u >= 0; u--)
+	for (startidx = (len - 1); startidx > 0; startidx--)
 	{
-	
-	if (s[u] == ' ' || u == 0)
-	{
-	if (u == 0)
-	{
-	startidx = 0;
-	}
-	else
-	{
-	startidx = u + 1;
-	}
-
-	for (v = startidx; v <= endidx; v++)
-	{
-	_putchar (s[v]);
-	}
-	endidx = u - 1;
-	_putchar (" ");
-	}
-
+	_putchar (s[startidx]);
 	}
 
 	_putchar ('\n');
