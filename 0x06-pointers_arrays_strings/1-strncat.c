@@ -1,27 +1,30 @@
-#include "main.h"
-/**
-* _strncat - concatenates two strings with a limit of n for
-* the source string
-*@dest: pointer variable to destination string
-*@src: pointer variable to source string
-*@n: integer variable indicating number of characters
-* Return: always 0 on success, 1 on error.
-*/
+#include "holberton.h"
 
+/**
+  * _strncat - Concatenates two strings
+  * @dest: The destination value
+  * @src: The source value
+  * @n: The limit of the concatenation
+  *
+  * Return: A pointer to the resulting string dest
+  */
 char *_strncat(char *dest, char *src, int n)
 {
-int count = 0, ldest = 0, i = 0, j = 0;
+	int dlen = 0, j = 0;
 
-for (i = 0; i <= dest[i] && (dest[i] != '\0'); dest++)
-{
-ldest = i + 1;
-}
-ldest = ldest + 1;
+	while (dest[dlen])
+	{
+		dlen++;
+	}
 
-for (j = 0; j <= n; j++)
-{
-dest[ldest + 1] = src[j];
-}
+	while (j < n && src[j])
+	{
+		dest[dlen] = src[j];
+		dlen++;
+		j++;
+	}
 
-return (dest);
+	dest[dlen + n + 1] = '\0';
+
+	return (dest);
 }
