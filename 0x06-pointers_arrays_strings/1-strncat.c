@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* *_strncat - concatenates two strings with a limit of n for
+* _strncat - concatenates two strings with a limit of n for
 * the source string
 *@dest: pointer variable to destination string
 *@src: pointer variable to source string
