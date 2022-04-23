@@ -20,10 +20,12 @@ char *_strcat(char *dest, char *src)
 	{
 	ldest = i + 1;
 	}
+	ldest = ldest + 1;
 
 	for (j = 0; j <= lsrc; j++)
 	{
-	dest[ldest + 1] = src[j];
+	dest[ldest] = src[j];
+	ldest++;
 	}
 
 	return (dest);
