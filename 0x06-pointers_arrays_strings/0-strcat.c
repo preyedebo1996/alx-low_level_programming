@@ -11,7 +11,8 @@ char *_strcat(char *dest, char *src)
 {
 	int count = 0, lsrc, ldest, i, j;
 
-	for (count = 0; count <= src[count] && (src[count] != '\0'); count++)
+	for 
+	(count = 0; count <= src[count] && (src[count] != '\0'); count++)
 	{
 	lsrc = count + 1;
 	}
@@ -28,3 +29,4 @@ char *_strcat(char *dest, char *src)
 
 	return (dest);
 }
+
