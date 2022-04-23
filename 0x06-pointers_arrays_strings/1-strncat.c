@@ -7,7 +7,7 @@
 *@n: integer variable indicating number of characters
 * Return: always 0 on success, 1 on error.
 */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 int count = 0, ldest, i, j;
 
