@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
  * *_strcat - concatenates two strings, overwriting
  * the terminating null byte (\0) at the end of dest
  * @dest: pointer to destination string
  * @src: pointer to source string
- * 
+ *
  * Return: always 0 on success, 1 on error.
  */
 char *_strcat(char *dest, char *src)
