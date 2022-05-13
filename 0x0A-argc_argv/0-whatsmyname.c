@@ -3,13 +3,11 @@
 
 /*
  * main - prints its name followed by a new line
- *
- * Return: 0 on success.
+ * @argv: pointer to array of arguments
+ * @argc: argument count
  */
 
-void main(char *argv)
+void main(int __attribute__((__unused__))argc, char *argv[])
 {
-	int i = 0;
-	if (argv[i])
-	printf("%s\n", *argv[i]);
+	printf("%s\n", argv[0]);
 }
