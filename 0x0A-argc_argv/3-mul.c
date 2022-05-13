@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - multiplies two numbers and prints the result
@@ -18,8 +17,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = argv[1];
-	b = argv[2];
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	product = (a * b);
 
 	printf("%d\n", product);
