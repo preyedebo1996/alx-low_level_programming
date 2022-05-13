@@ -1,2 +1,2 @@
 int _putchar(char c);
-void main(char *argv);
+int main(int __attribute__((__unused__))argc, char *argv[]);
