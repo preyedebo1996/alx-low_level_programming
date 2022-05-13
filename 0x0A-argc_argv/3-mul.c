@@ -4,12 +4,14 @@
  * main - multiplies two numbers and prints the result
  * @argc: number of arguments
  * @argv: pointer to string of arguments
+ * @a: first argument passed
+ * @b: second argument passed
  * Return: 0 on success, and 1 on error.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[int a ,int b])
 {
-	int a, b, product;
+	int product;
 
 	if (argc > 2)
 	{
@@ -17,8 +19,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = argv[0];
-	b = argv[1];
 	product = (a * b);
 
 	printf("%d\n", product);
