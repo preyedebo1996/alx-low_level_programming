@@ -24,13 +24,13 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; s1[i]; i++)
 	{
-		count1++
+		count1++;
 	}
 	count1 += 1;
 
 	for (i = 0; s2[i]; i++)
 	{
-		count2++
+		count2++;
 	}
 	count2 += 1;
 
