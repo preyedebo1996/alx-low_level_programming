@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 	s2 = " ";
 
-	for (count1 = 0; s1[count1] != "\0"; count1++)
+	for (count1 = 0; s1[count1]; count1++)
 	{
 		count1++;
 	}
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (concat == NULL)
 		return (NULL);
-	
+
 	for (j = 0; j < count1; j++)
 	{
 		concat[j] = s1[j];
