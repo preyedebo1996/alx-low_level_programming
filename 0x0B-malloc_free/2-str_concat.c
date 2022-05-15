@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	if (concat == NULL)
 		return (NULL);
 
-	concat = ("s1" + "s2" + "\0");
+	concat = _putchar(s1 + s2 + "\0");
 
 	return (concat);
 }
