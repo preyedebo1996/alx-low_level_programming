@@ -26,4 +26,7 @@ char *create_array(unsigned int size, char c)
 	{
 		carr[i] = c;
 	}
+
+/** free(carr);
+ */
 }
