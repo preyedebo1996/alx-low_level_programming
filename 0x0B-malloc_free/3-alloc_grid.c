@@ -22,10 +22,10 @@ int **alloc_grid(int width, int height)
 	{
 		for (j = 0; j < width; j++)
 		{
-			grid[i][j] = 0;
+			arr_2d[i][j] = 0;
 		}
 		_putchar("\n");
 	}
 
-	return (grid);
+	return (arr_2d);
 }
