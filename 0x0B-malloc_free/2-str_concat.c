@@ -14,7 +14,8 @@ char *str_concat(char *s1, char *s2)
 	char *concat;
 	unsigned int count1 = 0;
 	unsigned int count2 = 0;
-	unsigned int i;
+	unsigned int i, j;
+	unsigned int k = 0;
 
 	if  (s1 == NULL)
 		s1 = " ";
@@ -39,7 +40,18 @@ char *str_concat(char *s1, char *s2)
 	if (concat == NULL)
 		return (NULL);
 
-	concat = _putchar(s1 + s2 + "\0");
+	for (j = 0; j < count1; j++)
+	{
+		concat[j] = s1[j];
+	}
+	j += 1;
+
+	while (s2)
+	{
+		concat[j] = s2[k];
+			j++;
+			k++;
+	}
 
 	return (concat);
 }
