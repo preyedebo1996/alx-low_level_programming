@@ -4,10 +4,10 @@
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
- * 	,which contains a copy of a string given as parameter.
+ *	,which contains a copy of a string given as parameter.
  * @str: the spring parameter to be duplicated.
  * Return: a pointer to a duplicate string of str,
- * 	NULL if insufficient memory, NULL IF str = NULL.
+ *	NULL if insufficient memory, NULL IF str = NULL.
  */
 
 char *_strdup(char *str)
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	dupstr = malloc(sizeof(str));
+	dupstr = (unsigned int *)malloc(sizeof(str));
 
 	for (i = 0; i < sizeof(str); i++)
 	{
