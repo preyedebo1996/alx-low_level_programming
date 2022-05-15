@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
-	unsigned int count1, count2, i, j, k; 
+	unsigned int count1, count2, j, k; 
 
 	count1 = count2 = 0;
 
