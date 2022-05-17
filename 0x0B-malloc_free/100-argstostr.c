@@ -10,18 +10,31 @@
 char *argstostr(int ac, char **av)
 {
 	char *arg;
-	int i, j;
+	int i, j, index = 0;
+	int size = ac;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
+	for (i =0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+			size++;
+	}
+
 	arg = malloc(ac * sizeof(char **);
+	if (arg == NULL)
+	return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
-		arg += atoi(av[i]);
-		_putchar(arg);
-		_putchar(X'0A');
+		for (j = 0; av[i][j]; j++)
+		arg[index++] = av[i][j];
+
+		arg[index++] = '\n';
 	}
+
+	arg[size] = '\0';
 
 	return (arg);
 	free(arg);
