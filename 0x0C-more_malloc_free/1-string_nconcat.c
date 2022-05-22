@@ -7,12 +7,11 @@
 */
 unsigned int slen(char *str)
 {
-	usigned int len = 0, i = 0;
+	unsigned int len = 0;
 
-	while(str[i] != '\0')
+	while(str[len] != '\0')
 	{
 		len++;
-		i++;
 	}
 
 	return (len);
@@ -41,24 +40,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len2)
 	n = len2;
 
-	for (i = 0; i < n; i++)
-	{
-		s1[len1 + 1 + i] = s2[i];
-	}
-	len3 = slen(s1);
-
-	cat = malloc((len3) * sizeof(*cat));
+	cat = malloc((len1 + n + 1) * sizeof(char));
 	if (cat == NULL)
+		return (0);
+
+	for (i = 0; i < len1; i++)
 	{
-		free(cat);
-		return (NULL);
+		cat[i] = s1[i];
 	}
 
-	for (j = 0; j <= len3; j++)
-	{	
-		cat[j] = s1[j];			
+	for (; i < (len1 + n); i++)
+	{
+		p[i] = s2[i - size1];
 	}
-	cat[j + 1] = '\0';
+
+	cat[i] = '\0';
 
 	return (cat);
 	free(cat);
