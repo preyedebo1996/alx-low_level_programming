@@ -5,7 +5,7 @@
 * @str: string to find its length
 * Return: length of string
 */
-int slen(char *str)
+unsigned int slen(char *str)
 {
 	usigned int len = 0, i = 0;
 
