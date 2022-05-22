@@ -5,7 +5,7 @@
 * @str: string to find its length
 * Return: length of string
 */
-int stlen(char *str)
+int slen(char *str)
 {
 	usigned int len = 0, i = 0;
 
@@ -35,8 +35,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 	s2 = "";
 
-	len1 = stlen(s1);
-	len2 = stlen(s2);
+	len1 = slen(s1);
+	len2 = slen(s2);
 
 	if (n >= len2)
 	n = len2;
@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1[len1 + 1 + i] = s2[i];
 	}
-	len3 = stlen(s1);
+	len3 = slen(s1);
 
 	cat = malloc((len3) * sizeof(*cat));
 	if (cat == NULL)
