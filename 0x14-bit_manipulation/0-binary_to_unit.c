@@ -1,48 +1,47 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
- * _strlen - find the length of a string
- * @p: pointer to the string to check
- * Return: void
-*/
-
-
+ * _strlen - lenght of string
+ * @p:char
+ * Return:int
+ */
 int _strlen(const char *p)
 {
-int i = 0;
-while (p[i])
-	i++;
+	int i;
 
+		for (i = 0; p[i] != '\0'; i++)
+		{
+			continue;
+		}
 return (i);
 }
-
-
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: binary number
+ * binary_to_uint - convert binary to unsigned int
+ * @b:string from 0 and 1 else NULL
  *
- * Return: 0 or converted number
+ * Return:unsigned int
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0;
-	int i, len;
+	unsigned int k = 1;
+	unsigned int i = 0;
+	int c;
+	unsigned int len;
 
 	if (b == NULL)
 		return (0);
 
 	len = _strlen(b);
 
-	for (i = 0; i != len; i++)
+	for (c = len - 1; c >= 0; c--)
 	{
-		if (b[len - i - 1] == '1')
-			n += 1 << i;
-		else if (b[len - i - 1] != '0')
-			return (0);
+	if (b[c] != '0' && b[c] != '1')
+		return (0);
+	if (b[c] == '1')
+	{
+		i += k;
 	}
-
-	return (n);
+	k *= 2;
+}
+	return (i);
 }
