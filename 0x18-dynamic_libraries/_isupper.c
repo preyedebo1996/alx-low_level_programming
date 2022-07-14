@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isupper - Function that checks for uppercase character.
  * @c: is the character input
