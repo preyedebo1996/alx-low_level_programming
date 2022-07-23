@@ -1,2 +1,0 @@
-# MONTY MONTY MONTY
-## Projects
