@@ -2,9 +2,7 @@
 
 /**
  * add_dnodeint_end - Adds a new node at the end
- *
  * @head: struct
- *
  * @n: const int
  *
  * Return: dlistint_t
@@ -12,30 +10,26 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *list = NULL, *end = *head;
+	dlistint_t *new, *temp = *head;
 
-	list = malloc(sizeof(dlistint_t));
-
-	if (list == NULL)
-	{
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
 		return (NULL);
-	}
-	list->n = n;
-	list->prev = NULL;
-	list->next = NULL;
+	new->n = n;
+	new->next = NULL;
 
-	if (*head == NULL)
+	if (aux)
 	{
-		*head = list;
-		return (*head);
+		while (temp->next)
+			temp = temp->next;
+		new->prev = temp;
+		temp->next = new;
 	}
-
-	while (end->next != NULL)
+	else
 	{
-		end = end->next;
+		*head = new;
+		new->prev = NULL;
 	}
-	list->prev = end;
-	end->next = list;
 
-	return (list);
+	return (new);
 }
